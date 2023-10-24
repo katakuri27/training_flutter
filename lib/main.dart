@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 // Types of Widgets
 // 1. StatelessWiget
 // 2. StateFullWidget
 
+//State
+
+//1.Material Design
+//2.Cupertino Design
+
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
-  Widget build(BuildContext Context) {
-    return Text(
-      "Hello, world",
-      textDirection: TextDirection.rtl,
-    );
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+        home: Scaffold(
+      body: Text('Hello Med!!!'),
+    ));
   }
 }
